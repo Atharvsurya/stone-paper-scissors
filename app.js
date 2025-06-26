@@ -22,7 +22,7 @@ const play =(self)=>{
     (self === "paper" && comp === "rock") ||
     (self === "scissors" && comp === "paper")){
         scoreself++;
-        document.getElementById("result").innerHTML = "You Win!!";
+        document.getElementById("result").innerHTML = "You Win!! Your "+self+" beats "+comp;
         document.getElementById("selfscore").innerHTML =scoreself;
         document.getElementById("result").style.backgroundColor = "green";
     }
